@@ -184,6 +184,11 @@ for (const filename of files) {
   const source = await readFile(path.join(contentDir, filename), "utf8");
   const { data, markdown } = parseFrontmatter(source, filename);
 
+  if ("draft" in data && typeof data.draft !== "boolean") {
+    throw new Error(`${filename}: draft는 true 또는 false여야 합니다.`);
+  }
+  if (data.draft === true) continue;
+
   for (const key of required) {
     if (!data[key]) throw new Error(`${filename}: ${key} 값이 필요합니다.`);
   }

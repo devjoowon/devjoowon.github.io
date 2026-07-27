@@ -8,6 +8,7 @@ category: "Review"
 tags: ["Developer Tools", "Productivity", "Review"]
 cover: "violet"
 readTime: "5분"
+draft: true
 ---
 
 ## 도구보다 문제를 먼저 본다

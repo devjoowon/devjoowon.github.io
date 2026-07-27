@@ -45,3 +45,25 @@ test("exports posts and removes disposable starter metadata", async () => {
     access(new URL("../app/_sites-preview/preview.css", import.meta.url)),
   );
 });
+
+test("does not publish draft posts", async () => {
+  const hiddenSlugs = [
+    "github-pages-blog-workflow",
+    "debugging-notes-that-work",
+    "small-tools-big-difference",
+  ];
+  const [home, rss, sitemap] = await Promise.all([
+    readFile(new URL("../out/index.html", import.meta.url), "utf8"),
+    readFile(new URL("../out/rss.xml", import.meta.url), "utf8"),
+    readFile(new URL("../out/sitemap.xml", import.meta.url), "utf8"),
+  ]);
+
+  for (const slug of hiddenSlugs) {
+    assert.doesNotMatch(home, new RegExp(slug));
+    assert.doesNotMatch(rss, new RegExp(slug));
+    assert.doesNotMatch(sitemap, new RegExp(slug));
+    await assert.rejects(
+      access(new URL(`../out/posts/${slug}/index.html`, import.meta.url)),
+    );
+  }
+});
