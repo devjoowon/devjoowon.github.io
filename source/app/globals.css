@@ -825,6 +825,36 @@ button {
   font-size: 16px;
 }
 
+.comments-section {
+  border-top: 1px solid var(--line);
+  padding: 72px 0 88px;
+}
+
+.comments-section .eyebrow {
+  margin-bottom: 10px;
+}
+
+.article-body .comments-section h2 {
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+
+.article-body .comments-description {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 34px;
+}
+
+.comments-widget {
+  min-height: 156px;
+}
+
+.comments-widget .utterances {
+  margin: 0;
+  max-width: none;
+}
+
 .related-section {
   background: var(--surface);
   padding: 80px max(24px, calc((100% - var(--max-width)) / 2));
@@ -1193,6 +1223,14 @@ button {
   .author-avatar {
     height: 70px;
     width: 70px;
+  }
+
+  .comments-section {
+    padding: 58px 0 68px;
+  }
+
+  .article-body .comments-section h2 {
+    font-size: 28px;
   }
 
   .related-section {
