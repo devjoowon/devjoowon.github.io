@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Comments } from "../../components/Comments";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { getPost, posts } from "../../data/posts.generated";
@@ -101,6 +102,8 @@ export default async function PostPage({
                   <span>배운 것을 나만의 언어로 기록하고 있습니다.</span>
                 </div>
               </section>
+
+              <Comments />
             </div>
           </div>
         </article>

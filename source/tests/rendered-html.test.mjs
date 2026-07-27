@@ -16,23 +16,28 @@ test("exports the finished blog home", async () => {
 });
 
 test("exports posts and removes disposable starter metadata", async () => {
-  const [page, layout, packageJson] = await Promise.all([
+  const [page, layout, packageJson, comments] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
+    readFile(new URL("../app/components/Comments.tsx", import.meta.url), "utf8"),
   ]);
 
   assert.match(page, /<BlogHome \/>/);
   assert.match(layout, /뎁주의 테크블로그/);
   assert.match(layout, /\/og\.png/);
+  assert.match(comments, /https:\/\/utteranc\.es\/client\.js/);
+  assert.match(comments, /devjoowon\/blog-comments/);
+  assert.match(comments, /issue-term", "pathname"/);
   assert.doesNotMatch(layout, /codex-preview|Starter Project|_sites-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
-  await access(
-    new URL(
-      "../out/posts/hello-devjoowon-tech-blog/index.html",
-      import.meta.url,
-    ),
+  const postUrl = new URL(
+    "../out/posts/hello-devjoowon-tech-blog/index.html",
+    import.meta.url,
   );
+  await access(postUrl);
+  const postHtml = await readFile(postUrl, "utf8");
+  assert.match(postHtml, /id="comments-title">댓글<\/h2>/);
   await assert.rejects(
     access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)),
   );
