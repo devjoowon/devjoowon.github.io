@@ -21,7 +21,7 @@ export function GET() {
 <channel>
   <title>뎁주의 테크블로그</title>
   <link>${siteUrl}</link>
-  <description>배우고 고민한 IT 기술을 쉽고 단단하게 기록합니다.</description>
+  <description>직접 배우고 경험한 IT 기술을 기록합니다.</description>
   <language>ko</language>
   ${items}
 </channel>
