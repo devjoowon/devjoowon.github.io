@@ -8,6 +8,7 @@ category: "Tech"
 tags: ["GitHub", "CI/CD", "Static Site"]
 cover: "blue"
 readTime: "6분"
+draft: true
 ---
 
 ## 정적 블로그가 잘 맞는 이유

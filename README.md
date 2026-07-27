@@ -12,6 +12,12 @@
 지원 카테고리는 `Tech`, `Troubleshooting`, `Review`, `Life`입니다.
 커버 색상은 `peach`, `blue`, `mint`, `violet` 중 하나를 사용합니다.
 
+## 글 임시로 숨기기
+
+글 상단의 frontmatter에 `draft: true`를 추가하면 해당 글은 홈 목록,
+직접 주소, RSS, 사이트맵에서 제외됩니다. 다시 공개하려면 이 줄을
+삭제하거나 `draft: false`로 변경합니다.
+
 ## 로컬 미리보기
 
 ```bash

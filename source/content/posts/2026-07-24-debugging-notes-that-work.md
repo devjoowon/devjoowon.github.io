@@ -8,6 +8,7 @@ category: "Troubleshooting"
 tags: ["Debugging", "Documentation", "Workflow"]
 cover: "mint"
 readTime: "5분"
+draft: true
 ---
 
 ## 에러 메시지만 저장하면 부족하다
