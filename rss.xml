@@ -12,26 +12,5 @@
   <guid>https://devjoowon.github.io/posts/hello-devjoowon-tech-blog/</guid>
   <pubDate>Sun, 26 Jul 2026 15:00:00 GMT</pubDate>
 </item>
-<item>
-  <title><![CDATA[GitHub Pages로 기술 블로그 운영하기]]></title>
-  <description><![CDATA[저장소와 자동 배포를 연결해 글 작성에 집중할 수 있는 정적 블로그 운영 흐름을 정리합니다.]]></description>
-  <link>https://devjoowon.github.io/posts/github-pages-blog-workflow/</link>
-  <guid>https://devjoowon.github.io/posts/github-pages-blog-workflow/</guid>
-  <pubDate>Sat, 25 Jul 2026 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title><![CDATA[다시 쓸 수 있는 트러블슈팅 기록법]]></title>
-  <description><![CDATA[문제 상황, 가설, 검증 결과를 분리해 미래의 나도 재사용할 수 있는 디버깅 기록을 만듭니다.]]></description>
-  <link>https://devjoowon.github.io/posts/debugging-notes-that-work/</link>
-  <guid>https://devjoowon.github.io/posts/debugging-notes-that-work/</guid>
-  <pubDate>Thu, 23 Jul 2026 15:00:00 GMT</pubDate>
-</item>
-<item>
-  <title><![CDATA[작은 개발 도구가 만드는 큰 차이]]></title>
-  <description><![CDATA[유행보다 문제의 빈도와 유지 비용을 기준으로 개발 도구를 선택하는 과정을 살펴봅니다.]]></description>
-  <link>https://devjoowon.github.io/posts/small-tools-big-difference/</link>
-  <guid>https://devjoowon.github.io/posts/small-tools-big-difference/</guid>
-  <pubDate>Sun, 19 Jul 2026 15:00:00 GMT</pubDate>
-</item>
 </channel>
 </rss>
