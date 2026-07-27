@@ -25,7 +25,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">DEVJOO&apos;S TECH NOTES</p>
             <h1>뎁주의 테크블로그</h1>
-            <p>배우고 고민한 IT 기술을 쉽고 단단하게 기록합니다.</p>
+            <p>직접 배우고 경험한 IT 기술을 기록합니다.</p>
           </div>
         </section>
 

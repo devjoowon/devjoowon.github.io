@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="site-footer">
       <div>
         <p className="footer-title">Devjoo Tech</p>
-        <p>배우고 고민한 기술을 기록합니다.</p>
+        <p>직접 배우고 경험한 IT 기술을 기록합니다.</p>
       </div>
       <div className="footer-links">
         <a href="/rss.xml">RSS</a>
