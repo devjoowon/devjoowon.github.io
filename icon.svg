@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="30" fill="#ffa255"/>
+  <path
+    fill="#f28c3d"
+    fill-opacity=".24"
+    d="M60.5 37.5A30 30 0 0 1 24 61 30 30 0 0 0 61.5 29c.4 2.8.1 5.7-1 8.5Z"
+  />
+  <path
+    fill="#333e4c"
+    fill-rule="evenodd"
+    d="M18 14h15.5C45 14 52 20.8 52 32s-7 18-18.5 18H18V14Zm9 8v20h6c6.4 0 10-3.6 10-10s-3.6-10-10-10h-6Z"
+  />
+</svg>
