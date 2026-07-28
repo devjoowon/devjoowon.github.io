@@ -1,7 +1,7 @@
 ---
 slug: "hello-devjoowon-tech-blog"
 title: "뎁주의 테크블로그를 시작합니다"
-subtitle: "배운 것을 오래 남기는 가장 좋은 방법에 대하여"
+subtitle: "배운 것을 오래 기억할 수 있도록
 description: "기술을 배우는 데서 멈추지 않고, 나만의 언어로 정리하기 위해 블로그를 시작합니다."
 date: "2026-07-27"
 category: "Life"
