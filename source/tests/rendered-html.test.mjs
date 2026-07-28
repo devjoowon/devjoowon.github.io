@@ -12,7 +12,9 @@ test("exports the finished blog home", async () => {
   assert.match(html, /DEVJOO/);
   assert.match(html, /뎁주의 테크블로그를 새로 시작합니다/);
   assert.match(html, /https:\/\/github\.com\/devjoowon/);
+  assert.match(html, /\/icon\.svg/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/i);
+  await access(new URL("../out/icon.svg", import.meta.url));
 });
 
 test("exports posts and removes disposable starter metadata", async () => {
