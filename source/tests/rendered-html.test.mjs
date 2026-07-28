@@ -40,6 +40,7 @@ test("exports posts and removes disposable starter metadata", async () => {
   await access(postUrl);
   const postHtml = await readFile(postUrl, "utf8");
   assert.match(postHtml, /id="comments-title">댓글<\/h2>/);
+  assert.match(postHtml, /개발을 하며 배운 것들을 기록하고 있습니다\./);
   await assert.rejects(
     access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)),
   );

@@ -314,6 +314,7 @@ button {
   gap: 7px;
   min-width: 225px;
   padding: 8px 14px;
+  scroll-margin-top: 96px;
   transition: border 160ms ease;
 }
 

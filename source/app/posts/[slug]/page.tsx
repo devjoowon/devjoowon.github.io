@@ -99,7 +99,7 @@ export default async function PostPage({
                 <div className="author-avatar">D</div>
                 <div>
                   <p><strong>뎁주</strong> | Developer</p>
-                  <span>배운 것을 나만의 언어로 기록하고 있습니다.</span>
+                  <span>개발을 하며 배운 것들을 기록하고 있습니다.</span>
                 </div>
               </section>
 
